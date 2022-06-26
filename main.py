@@ -1,22 +1,17 @@
 #OOP
 class PlayerCharacter:
-  #Class Object Attribute
-  membership = True
+
   def __init__(self,name,age):
-    if(age > 18):
       self.name=name
       self.age=age
-    else:
-      print("Too young, can't play")
-    
+   
      
   def run(self):
     print("Run")
     return "Done"
-player1=PlayerCharacter("Mirko",30)
-player2=PlayerCharacter("Tom",20)
-player1.attack=50
-print(f"name character is : {player1.name}")
-print(player1.attack)
-
+player1name=input("What is your name?")
+player1age= input("What is your age?")
+player1=PlayerCharacter(player1name,player1age)
+print(player1.name)
+player2=PlayerCharacter("Tom",18)
 print(player2.age)
